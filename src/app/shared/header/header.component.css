@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  flex: 1;
+  padding: 0 1rem 0 3rem;
+  background-color: rgb(215, 185, 185);
+}
+
+.logo {
+  width: 200px;
+}
+
+img .logo {
+  width: 200px;
+  object-fit: cover;
+  height: 4rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  flex: 1;
+  gap: 20px;
+  word-break: normal;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.buttons {
+  max-width: none;
+}
