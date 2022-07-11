@@ -18,21 +18,11 @@ img .logo {
   height: 4rem;
 }
 
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 2.5rem;
-  flex: 1;
-  gap: 20px;
-  word-break: normal;
+.btn-icon {
+  background-color: transparent;
+  border-width: 0px;
 }
 
-ul li {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.buttons {
-  max-width: none;
+.icon {
+  width: 30px;
 }

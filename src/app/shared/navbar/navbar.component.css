@@ -1,0 +1,14 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  flex: 1;
+  gap: 20px;
+  word-break: normal;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}

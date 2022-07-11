@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  isMobile: boolean = false;
   constructor() {}
-
-  ngOnInit(): void {}
+  screenWidth!: number;
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.screenWidth = event.target.innerWidth;
+    // console.clear();
+    this.screenWidth <= 800 ? (this.isMobile = true) : (this.isMobile = false);
+  }
+  ngOnInit(): void {
+    if (window.innerWidth <= 800) this.isMobile = true;
+  }
 }
