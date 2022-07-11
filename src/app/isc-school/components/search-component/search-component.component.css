@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #dde2e7;
+  border-radius: 9px;
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.search input {
+  width: 100%;
+  border: transparent;
+  height: 2.5rem;
+  outline: none;
+}
+
+.search-icon {
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.isc-search-solid {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.clear-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
