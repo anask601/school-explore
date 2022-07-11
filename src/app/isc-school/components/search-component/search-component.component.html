@@ -1,0 +1,21 @@
+<div class="search">
+  <div class="search-input">
+    <input
+      type="text"
+      #searchInput
+      placeholder="Search For An Institute Or Course"
+      (input)="onInput($event)"
+    />
+  </div>
+  <div class="clear-icon">
+    <i
+      class="isc-times-solid"
+      aria-hidden="true"
+      *ngIf="searchInput.value !== ''"
+      (click)="onClear(searchInput)"
+    ></i>
+  </div>
+  <div class="search-icon">
+    <i class="isc-search-solid"></i>
+  </div>
+</div>
