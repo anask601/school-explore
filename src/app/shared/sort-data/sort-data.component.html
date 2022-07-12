@@ -1,0 +1,16 @@
+<section class="sorts">
+  <ng-container *ngFor="let sort of sortData; first as isFirst; last as isLast">
+    <div
+      class="sort-option"
+      [ngClass]="{ selected: sort.selected, first: isFirst, last: isLast }"
+    >
+      {{ sort.name }}
+      <span *ngIf="sort.isSort">
+        &nbsp;
+        <i *ngIf="!sort.selected" class="isc-sort-solid"></i>
+        <i *ngIf="sort.selected && sort.order" class="isc-sort-solid-down"></i>
+        <i *ngIf="sort.selected && !sort.order" class="isc-sort-solid-up"></i>
+      </span>
+    </div>
+  </ng-container>
+</section>
