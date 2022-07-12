@@ -1,8 +1,23 @@
-.result-details {
+.results-sort {
+  width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 1rem 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.result-details {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  margin-top: 1rem;
   color: #333333;
+}
+
+.sort-option {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: small;
 }

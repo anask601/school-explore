@@ -1,1 +1,25 @@
-<p>university-filters works!</p>
+<div class="filter-card">
+  <div class="filter-title">Filter</div>
+
+  <span class="line"></span>
+
+  <div class="country-field">Country</div>
+
+  <div class="filter-search-bar">
+    <div class="search-icon">
+      <i class="isc-search-solid"></i>
+    </div>
+    <div class="search-input">
+      <input type="text" #searchInput placeholder="Search For A Discipline" />
+    </div>
+    <div class="clear-icon">
+      <i
+        class="isc-times-solid"
+        aria-hidden="true"
+        *ngIf="searchInput.value !== ''"
+      ></i>
+    </div>
+  </div>
+
+  <div class="country-filter"></div>
+</div>
