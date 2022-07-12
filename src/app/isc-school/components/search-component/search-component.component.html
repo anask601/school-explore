@@ -2,17 +2,17 @@
   <div class="search-input">
     <input
       type="text"
-      #searchInput
+      #searchText
       placeholder="Search For An Institute Or Course"
-      (input)="onInput($event)"
+      (input)="onSearch($event)"
     />
   </div>
   <div class="clear-icon">
     <i
       class="isc-times-solid"
       aria-hidden="true"
-      *ngIf="searchInput.value !== ''"
-      (click)="onClear(searchInput)"
+      *ngIf="searchText.value !== ''"
+      (click)="onClear(searchText)"
     ></i>
   </div>
   <div class="search-icon">
