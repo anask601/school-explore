@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class UniversityDataComponent implements OnInit {
   universitys: Array<UniversityData> = [
     {
-      universityID: 1,
+      id: 1,
       name: 'Harvard University 1',
       logoUrl: '../../../../assets/images/iSchoolConnect-logo.svg',
       location: {
@@ -28,7 +28,7 @@ export class UniversityDataComponent implements OnInit {
         'Established in 1636, Harvard University is one of the oldest and most prestigious universities in the world. The Ivy League university is placed 5th in the QS World University Rankings 2022, 2nd in THE World Rankings, 3rd in Best Value Schools, and 5th in Graduate Employability. It is also known as one of the most innovative schools in the world and is well valued among international students.',
     },
     {
-      universityID: 2,
+      id: 2,
       name: 'Harvard University 2',
       logoUrl: '../../../../assets/images/iSchoolConnect-logo.svg',
       location: {
@@ -47,7 +47,7 @@ export class UniversityDataComponent implements OnInit {
         'Established in 1636, Harvard University is one of the oldest and most prestigious universities in the world. The Ivy League university is placed 5th in the QS World University Rankings 2022, 2nd in THE World Rankings, 3rd in Best Value Schools, and 5th in Graduate Employability. It is also known as one of the most innovative schools in the world and is well valued among international students.',
     },
     {
-      universityID: 3,
+      id: 3,
       name: 'Harvard University 3',
       logoUrl: '../../../../assets/images/iSchoolConnect-logo.svg',
       location: {
@@ -66,7 +66,7 @@ export class UniversityDataComponent implements OnInit {
         'Massachusettes Institute Of Technology has the mission to advance knowledge and educate students in science,technology and other areas that will best serve the nation and the world. The university moulds the students to be productive, imaginative and welcome all the talented students regardless of where they came from.',
     },
     {
-      universityID: 4,
+      id: 4,
       name: 'Harvard University 4',
       logoUrl: '../../../../assets/images/iSchoolConnect-logo.svg',
       location: {
@@ -86,6 +86,10 @@ export class UniversityDataComponent implements OnInit {
     },
   ];
   constructor() {}
+
+  onclick(id: any): void {
+    console.log(id);
+  }
 
   ngOnInit(): void {}
 }

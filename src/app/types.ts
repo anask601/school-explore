@@ -1,5 +1,5 @@
 export type UniversityData = {
-  universityID: number;
+  id: number;
   name: string;
   logoUrl: string;
   location: {

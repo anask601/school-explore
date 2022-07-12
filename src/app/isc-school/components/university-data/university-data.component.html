@@ -1,5 +1,5 @@
 <ng-container *ngFor="let university of universitys">
-  <section class="uni-container">
+  <section class="uni-container" (click)="onclick(university.id)">
     <div class="left-uni">
       <div class="uni-img">
         <img

@@ -1,3 +1,4 @@
+import { SchoolExploreRoutingModule } from './routing/school-explore-routing.module';
 import { UniversityFiltersComponent } from './components/university-filters/university-filters.component';
 import { UniversityDataComponent } from './components/university-data/university-data.component';
 import { SearchComponentComponent } from './components/search-component/search-component.component';
@@ -14,7 +15,12 @@ import { FormsModule } from '@angular/forms';
     UniversityDataComponent,
     UniversityFiltersComponent,
   ],
-  imports: [CommonModule, SharedModule, FormsModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    FormsModule,
+    SchoolExploreRoutingModule,
+  ],
   exports: [SchoolExploreComponent, FormsModule],
 })
 export class SchoolExploreModule {}

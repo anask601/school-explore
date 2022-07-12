@@ -1,18 +1,20 @@
-<header class="header">
-  <div class="logo">
-    <img src="../../../assets/images/iSchoolConnect-logo.svg" alt="logo" />
-  </div>
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/images/iSchoolConnect-logo.svg" alt="logo" />
+    </div>
 
-  <div class="buttons" *ngIf="!isMobile; else mobile">
-    <app-navbar></app-navbar>
+    <div class="navbar" *ngIf="!isMobile; else mobile">
+      <app-navbar></app-navbar>
+    </div>
+    <ng-template #mobile>
+      <button class="btn-icon">
+        <img
+          src="../../../assets/images/icons8-menu.svg"
+          alt="Menu"
+          class="icon"
+        />
+      </button>
+    </ng-template>
   </div>
-  <ng-template #mobile>
-    <button class="btn-icon">
-      <img
-        src="../../../assets/images/icons8-menu.svg"
-        alt="Menu"
-        class="icon"
-      />
-    </button>
-  </ng-template>
 </header>

@@ -1,10 +1,18 @@
+import { SchoolProfileComponent } from './isc-school/screens/school-profile/school-profile.component';
+import { SchoolExploreComponent } from './isc-school/screens/school-explore/school-explore.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: SchoolProfileComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
