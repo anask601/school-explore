@@ -21,5 +21,22 @@
     </div>
   </div>
 
-  <div class="country-filter"></div>
+  <div class="country-filter">
+    <ng-container *ngFor="let data of countryFilterData">
+      <div class="country-data">
+        <div class="country-data_checkbox">
+          <input
+            type="checkbox"
+            [name]="data.name"
+            [id]="data.id"
+            [value]="data.id"
+          />
+          <label>{{ data.name }}</label>
+        </div>
+        <div class="country-data-title">
+          <h5>{{ data.nama }}</h5>
+        </div>
+      </div>
+    </ng-container>
+  </div>
 </div>

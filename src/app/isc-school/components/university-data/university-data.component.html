@@ -1,1 +1,50 @@
-<p>university-data works!</p>
+<ng-container *ngFor="let university of universitys">
+  <section class="uni-container">
+    <div class="left-uni">
+      <div class="uni-img">
+        <img
+          class="school-img"
+          src="../../../../assets/images/icon-192.png"
+          [alt]="university.name"
+        />
+      </div>
+    </div>
+    <div class="right-uni">
+      <div class="uni-cards">
+        <div class="uni-title">
+          <h3 class="uni-name">{{ university.name }}</h3>
+        </div>
+      </div>
+      <div class="uni-location">
+        <div class="uni-city">
+          <i class="isc-location-marker"></i>
+          <span>{{ university.location.landmark }}</span>
+        </div>
+        <div class="uni-country">
+          <i class="isc-strength"></i>
+          <span>{{ university.location.country }}</span>
+        </div>
+      </div>
+      <div class="uni-rank-and-acceptance">
+        <div class="uni-rank">
+          <i [class]="university.iscRanking.logo"></i>
+          <div class="uni-rank-data">
+            <div class="uni-rank-value">
+              {{ university.iscRanking.rateNum }}
+            </div>
+            <div class="uni-rank-title">iSC Rank</div>
+          </div>
+        </div>
+        <div class="uni-acceptance">
+          <i [class]="university.AcceptanceRate.logo"></i>
+          <div class="uni-acceptance-data">
+            <div class="uni-acceptance-value">
+              {{ university.AcceptanceRate.rateNum }}
+            </div>
+            <div class="uni-acceptance-titile">Acceptance Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-container>

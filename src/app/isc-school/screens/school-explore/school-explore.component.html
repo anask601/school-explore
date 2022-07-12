@@ -1,6 +1,7 @@
 <app-header></app-header>
-<app-search-component></app-search-component>
-<section>
+
+<section class="screen-container">
+  <app-search-component></app-search-component>
   <div class="results-sort">
     <h6 class="result-details">
       You found <strong>1,742</strong> institutes and
@@ -10,10 +11,13 @@
   <div class="sort-option">
     <app-sort-data></app-sort-data>
   </div>
-  <section class="uni-details">
+  <section class="uni-details conatiner">
     <div class="uni-filters">
       <!-- <app-university-filters></app-university-filters> -->
+      <div>filter</div>
     </div>
-    <div class="uni-list"></div>
+    <div class="uni-list">
+      <app-university-data></app-university-data>
+    </div>
   </section>
 </section>

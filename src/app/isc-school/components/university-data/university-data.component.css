@@ -1,0 +1,53 @@
+.uni-container {
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(204, 204, 204, 0.3);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  transition: box-shadow 0.3s ease;
+  padding: 0.7rem;
+  cursor: pointer;
+  min-width: 130%;
+  margin-bottom: 1rem;
+}
+.left-uni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+.school-img {
+  width: 91px;
+  height: 91px;
+}
+
+.right-uni {
+  display: flex;
+  flex-direction: column;
+}
+
+.uni-location {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.uni-rank-and-acceptance {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.uni-rank,
+.uni-acceptance {
+  flex: 1;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
