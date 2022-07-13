@@ -1,0 +1,50 @@
+li {
+  cursor: pointer;
+  padding: 0.5rem 0.65rem;
+  margin: 0 0.65rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  list-style-type: none;
+  background-color: rgb(215, 185, 185);
+}
+li:last-child {
+  background-color: #00aff0;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sideBarOpen {
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  width: 100%;
+}
+
+.isSideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  background: #fff;
+  animation: slide 0.3s ease-in-out;
+}
+ul.isSideBar {
+  padding: 0.5rem 0 1rem 0;
+}
+@keyframes slide {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

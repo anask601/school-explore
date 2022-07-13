@@ -1,1 +1,24 @@
-<app-header></app-header>
+<section class="screen-container">
+  <app-search-component></app-search-component>
+  <div>
+    <div class="results-sort">
+      <h6 class="result-details">
+        You found <strong>1,742</strong> institutes and
+        <strong>15,472</strong> courses
+      </h6>
+    </div>
+    <div class="sort-option">
+      <app-sort-data></app-sort-data>
+    </div>
+  </div>
+  <div class="uni-details">
+    <div class="uni-filters">
+      <!-- <app-university-filters></app-university-filters> -->
+      <div>filter</div>
+    </div>
+    <div class="uni-list">
+      <app-university-data></app-university-data>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

@@ -1,38 +1,30 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   height: 5rem;
   flex: 1;
-  padding: 0 1rem 0 3rem;
+  padding: 0 1rem 0 1rem;
+  min-width: 100%;
   background-color: rgb(215, 185, 185);
 }
 
-.logo {
-  width: 200px;
-}
-
-img .logo {
-  width: 200px;
-  object-fit: cover;
-  height: 4rem;
-}
-
-.button-group {
+.container {
   display: flex;
+  flex-direction: row;
+  margin-top: 1.3rem;
   justify-content: space-between;
-  align-items: center;
-  height: 2.5rem;
-  flex: 1;
-  gap: 20px;
-  word-break: normal;
+  align-self: center;
+}
+.logo {
+  object-fit: cover;
 }
 
-ul li {
-  text-decoration: none;
-  list-style-type: none;
+.icon {
+  width: 30px;
 }
-
-.buttons {
-  max-width: none;
+.navbar {
+  margin-right: 1rem;
 }

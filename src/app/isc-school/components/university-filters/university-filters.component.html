@@ -1,0 +1,42 @@
+<div class="filter-card">
+  <div class="filter-title">Filter</div>
+
+  <span class="line"></span>
+
+  <div class="country-field">Country</div>
+
+  <div class="filter-search-bar">
+    <div class="search-icon">
+      <i class="isc-search-solid"></i>
+    </div>
+    <div class="search-input">
+      <input type="text" #searchInput placeholder="Search For A Discipline" />
+    </div>
+    <div class="clear-icon">
+      <i
+        class="isc-times-solid"
+        aria-hidden="true"
+        *ngIf="searchInput.value !== ''"
+      ></i>
+    </div>
+  </div>
+
+  <div class="country-filter">
+    <ng-container *ngFor="let data of countryFilterData">
+      <div class="country-data">
+        <div class="country-data_checkbox">
+          <input
+            type="checkbox"
+            [name]="data.name"
+            [id]="data.id"
+            [value]="data.id"
+          />
+          <label>{{ data.name }}</label>
+        </div>
+        <div class="country-data-title">
+          <h5>{{ data.nama }}</h5>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
