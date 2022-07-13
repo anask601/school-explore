@@ -10,19 +10,19 @@ import { ServicesService } from 'src/app/services/services.service';
   styleUrls: ['./school-profile.component.css'],
 })
 export class SchoolProfileComponent implements OnInit {
-  // @ViewChild('onClick', { read: UniversityDataComponent })
-  // onID!: UniversityDataComponent;
-  universityData!: UniversityData | undefined;
+  universityData?: UniversityData;
+
+  uniData!: UniversityData[];
   constructor(
-    private _router: Router,
     private _activeRouter: ActivatedRoute,
     private _universityService: ServicesService
   ) {}
 
   ngOnInit(): void {
     const universityId = +this._activeRouter.snapshot.params['id'];
+    //  this is line is object
     this.universityData =
       this._universityService.getUniversityFromId(universityId);
-    console.log(universityId);
+    this.uniData = [this.universityData!];
   }
 }

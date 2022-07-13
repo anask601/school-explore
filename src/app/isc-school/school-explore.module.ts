@@ -8,19 +8,16 @@ import { CommonModule } from '@angular/common';
 import { SchoolExploreComponent } from './screens/school-explore/school-explore.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ComponentsModule } from './components.module';
 
 @NgModule({
-  declarations: [
-    SchoolExploreComponent,
-    SearchComponentComponent,
-    UniversityDataComponent,
-    UniversityFiltersComponent,
-  ],
+  declarations: [SchoolExploreComponent],
   imports: [
     RouterModule.forChild([{ path: '', component: SchoolExploreComponent }]),
     CommonModule,
     SharedModule,
     FormsModule,
+    ComponentsModule,
     SchoolExploreRoutingModule,
   ],
   exports: [SchoolExploreComponent, FormsModule],
