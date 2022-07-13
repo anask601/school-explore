@@ -20,7 +20,7 @@ export class ServicesService {
       },
       AcceptanceRate: {
         logo: 'isc-acceptance-rate',
-        rateNum: '2',
+        rateNum: '90%',
       },
       description:
         'Established in 1636, Harvard University is one of the oldest and most prestigious universities in the world. The Ivy League university is placed 5th in the QS World University Rankings 2022, 2nd in THE World Rankings, 3rd in Best Value Schools, and 5th in Graduate Employability. It is also known as one of the most innovative schools in the world and is well valued among international students.',
@@ -35,11 +35,11 @@ export class ServicesService {
       },
       iscRanking: {
         logo: 'isc-rank',
-        rateNum: 2,
+        rateNum: 1,
       },
       AcceptanceRate: {
         logo: 'isc-acceptance-rate',
-        rateNum: '2',
+        rateNum: '30%',
       },
       description:
         'Established in 1636, Harvard University is one of the oldest and most prestigious universities in the world. The Ivy League university is placed 5th in the QS World University Rankings 2022, 2nd in THE World Rankings, 3rd in Best Value Schools, and 5th in Graduate Employability. It is also known as one of the most innovative schools in the world and is well valued among international students.',
@@ -54,11 +54,11 @@ export class ServicesService {
       },
       iscRanking: {
         logo: 'isc-rank',
-        rateNum: 2,
+        rateNum: 3,
       },
       AcceptanceRate: {
         logo: 'isc-acceptance-rate',
-        rateNum: '2',
+        rateNum: '80%',
       },
       description:
         'Massachusettes Institute Of Technology has the mission to advance knowledge and educate students in science,technology and other areas that will best serve the nation and the world. The university moulds the students to be productive, imaginative and welcome all the talented students regardless of where they came from.',
@@ -73,11 +73,11 @@ export class ServicesService {
       },
       iscRanking: {
         logo: 'isc-rank',
-        rateNum: 2,
+        rateNum: 7,
       },
       AcceptanceRate: {
         logo: 'isc-acceptance-rate',
-        rateNum: '2',
+        rateNum: '20%',
       },
       description:
         'Established in 1636, Harvard University is one of the oldest and most prestigious universities in the world. The Ivy League university is placed 5th in the QS World University Rankings 2022, 2nd in THE World Rankings, 3rd in Best Value Schools, and 5th in Graduate Employability. It is also known as one of the most innovative schools in the world and is well valued among international students.',

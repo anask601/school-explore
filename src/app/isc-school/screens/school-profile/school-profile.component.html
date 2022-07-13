@@ -1,1 +1,20 @@
-<section>working</section>
+<ng-container *ngFor="let data of uniData">
+  <header>
+    <h1>{{ data.name }}</h1>
+    <h3>iSC Ranking:{{ data.iscRanking.rateNum }}</h3>
+    <h3>iSC Acceptance:{{ data.AcceptanceRate.rateNum }}</h3>
+  </header>
+  <section class="wrap">
+    <article class="school-grid-container">
+      <div class="about">
+        <h1>About</h1>
+        {{ data?.description }}
+      </div>
+      <div class="assocation">
+        <h1>Association</h1>
+        {{ data?.description }}
+      </div>
+    </article>
+  </section>
+</ng-container>
+<router-outlet></router-outlet>

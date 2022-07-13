@@ -1,6 +1,6 @@
 import { ServicesService } from 'src/app/services/services.service';
 import { UniversityData } from './../../../types';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class UniversityDataComponent implements OnInit {
   universityData!: UniversityData[];
-  univID!: any;
+
   constructor(
     private _universityService: ServicesService,
     private _router: Router
