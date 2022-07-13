@@ -22,20 +22,9 @@ header {
   object-fit: cover;
 }
 
-.btn-icon {
-  background-color: transparent;
-  border-width: 0px;
-}
-
 .icon {
   width: 30px;
 }
 .navbar {
   margin-right: 1rem;
-}
-
-@media screen and (min-width: 767px) {
-  header {
-    width: fit-content;
-  }
 }

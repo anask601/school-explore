@@ -7,6 +7,7 @@ import { SharedModule } from './../shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { SchoolExploreComponent } from './screens/school-explore/school-explore.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     UniversityFiltersComponent,
   ],
   imports: [
+    RouterModule.forChild([{ path: '', component: SchoolExploreComponent }]),
     CommonModule,
     SharedModule,
     FormsModule,

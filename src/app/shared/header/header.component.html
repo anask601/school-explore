@@ -4,17 +4,18 @@
       <img src="../../../assets/images/iSchoolConnect-logo.svg" alt="logo" />
     </div>
 
-    <div class="navbar" *ngIf="!isMobile; else mobile">
-      <app-navbar></app-navbar>
+    <div class="navbar">
+      <app-navbar *ngIf="!isMobile; else mobile"></app-navbar>
     </div>
     <ng-template #mobile>
-      <button class="btn-icon">
+      <app-sidebar></app-sidebar>
+      <!-- <button class="btn-icon">
         <img
           src="../../../assets/images/icons8-menu.svg"
           alt="Menu"
           class="icon"
         />
-      </button>
+      </button> -->
     </ng-template>
   </div>
 </header>

@@ -1,0 +1,15 @@
+<img
+  src="../../../assets/images/icons8-menu.svg"
+  *ngIf="!isSideBarOpen; else sideBar"
+  (click)="toggleSideBar()"
+  class="btn"
+/>
+
+<ng-template #sideBar>
+  <img
+    src="../../../assets/images/icons8-multiply-30.png"
+    alt=""
+    (click)="toggleSideBar()"
+  />
+  <app-navbar [isSideBar]="true"></app-navbar>
+</ng-template>

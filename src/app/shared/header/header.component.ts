@@ -6,14 +6,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  isMobile: boolean = false;
+  isMobile?: boolean = false;
   constructor() {}
-  screenWidth!: number;
+
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.screenWidth = event.target.innerWidth;
-    // console.clear();
-    this.screenWidth <= 800 ? (this.isMobile = true) : (this.isMobile = false);
+    this.isMobile = event.target.innerWidth <= 800 ? true : false;
   }
   ngOnInit(): void {
     if (window.innerWidth <= 800) this.isMobile = true;

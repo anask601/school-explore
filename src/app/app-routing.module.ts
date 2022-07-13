@@ -7,7 +7,14 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: SchoolProfileComponent,
+    redirectTo: 'school-explore',
+  },
+  {
+    path: 'school-explore',
+    loadChildren: () =>
+      import('./isc-school/school-explore.module').then(
+        (m) => m.SchoolExploreModule
+      ),
   },
 ];
 
